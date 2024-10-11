@@ -72,7 +72,7 @@ const Auth = () => {
             email,
             password,
           },
-          { withCredentials: false }
+          { withCredentials: true }
         );
         if (response.status === 201) {
           setUserInfo(response.data.user);
